@@ -1,0 +1,9 @@
+{
+    "isDryrun": false,
+    "alias": {
+        "builder": "builder",
+        "public": "public"
+    },
+    "base": "public",
+    "partner": "builder"
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/common.css">
+    <link rel="icon" type="image/x-icon" href="/static/image/logo.jpg">
+
+    <style>
+        .login-page {
+            align-items: center;
+            background-color: #e9ecef;
+            -webkit-justify-content: center;
+            justify-content: center
+        }
+
+        .card {
+            box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+            margin-bottom: 1rem;
+        }
+
+        .login-page {
+            background-image: url('/static/image/common-background.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .login_face {
+            margin: -55px auto 20px;
+            width: 50%;
+            max-width: 150px;
+            height: auto;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            overflow: hidden;
+            box-shadow: 0 0 30px #007bffe3;
+            background: #fff;
+        }
+
+        .login-login_face img {
+            vertical-align: middle;
+            border-style: none;
+            box-sizing: border-box;
+            overflow-clip-margin: content-box;
+            overflow: clip;
+        }
+    </style>
+</head>
+
+<body class="login-page">
+    <dompatcher base="./landing.html">
+
+        <patch at="head title">
+            <title>Đăng nhập - NUMEROLOGY</title>
+        </patch>
+
+        <patch atDom="head" at="style#pageStyle">
+            <style id="pageStyle">
+                .login-page {
+                    align-items: center;
+                    background-color: #e9ecef;
+                    -webkit-justify-content: center;
+                    justify-content: center
+                }
+
+                .card {
+                    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+                    margin-bottom: 1rem;
+                }
+
+                .login-page {
+                    background-image: url('/static/image/common-background.jpg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                .login_face {
+                    margin: -55px auto 20px;
+                    width: 50%;
+                    max-width: 150px;
+                    height: auto;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    border-radius: 50%;
+                    border: 5px solid #fff;
+                    overflow: hidden;
+                    box-shadow: 0 0 30px #007bffe3;
+                    background: #fff;
+                }
+
+                .login-login_face img {
+                    vertical-align: middle;
+                    border-style: none;
+                    box-sizing: border-box;
+                    overflow-clip-margin: content-box;
+                    overflow: clip;
+                }
+            </style>
+        </patch>
+
+        <patch at="body .container">
+            <div class="container">
+                <div class="center-absolute width-max-sm">
+                    <div class="login_face"><img src="/static/image/logo.jpg"></div>
+                    <div class="card">
+                        <div class="card-body">
+
+                            <div class="row">
+                                <p class="text-bold text-align-center">Phần Mềm Số Học NUMEROLOGY</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </patch>
+
+    </dompatcher>
+
+</body>
+
+</html>

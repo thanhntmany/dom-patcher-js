@@ -1,0 +1,23 @@
+{
+  "name": "dom-patcher",
+  "version": "1.0.0",
+  "description": "dom-patcher-js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thanhntmany/dom-patcher-js.git"
+  },
+  "author": "thanhntmany@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thanhntmany/dom-patcher-js/issues"
+  },
+  "homepage": "https://github.com/thanhntmany/dom-patcher-js#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsdom": "^21.1.0"
+  }
+}

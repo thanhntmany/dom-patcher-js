@@ -1,0 +1,9 @@
+node_modules/
+
+**/.das/tmp/**
+
+template/*--tmp
+output/*
+controller/staticWebsite/public/www/ouput/*
+
+.env
